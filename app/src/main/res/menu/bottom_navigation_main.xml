@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/navigation_transaction"
+        android:enabled="true"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/transaction"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/navigation_history"
+        android:enabled="true"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="@string/history"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/navigation_summary"
+        android:enabled="true"
+        android:icon="@drawable/ic_storage_black_24dp"
+        android:title="@string/summary"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/my_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/my_account"
+        app:showAsAction="ifRoom" />
+</menu>

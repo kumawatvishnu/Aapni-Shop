@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_marginBottom="5dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="@color/silver">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/transaction_amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Amount"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:padding="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="7">
+                <TextView
+                    android:id="@+id/transaction_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction Details"
+                    android:textSize="15dp"
+                    android:padding="2dp"/>
+                <TextView
+                    android:id="@+id/transaction_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="transaction Type"
+                    android:textSize="20dp"
+                    android:padding="2dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
