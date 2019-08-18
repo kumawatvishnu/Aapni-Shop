@@ -27,7 +27,7 @@
                     android:id="@+id/profile_photo"
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:src="@drawable/chaudharyhardware" />
+                    android:src="@drawable/papajii" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,7 +39,7 @@
                     android:id="@+id/shop_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Chaudhary Hardware"
+                    android:text="Kumawat Hardware"
                     android:textSize="30dp"
                     android:textAlignment="center"
                     android:background="@color/silver"
@@ -49,7 +49,7 @@
                     android:id="@+id/owner_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="R. Chaudhary"
+                    android:text="Sharwan Kumawat"
                     android:textSize="25dp"
                     android:textAlignment="center"
                     android:background="@color/silver"
@@ -59,7 +59,7 @@
                     android:id="@+id/shop_ph_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mob. 9468684517"
+                    android:text="Mob. 9461537057"
                     android:textSize="25dp"
                     android:textAlignment="center"
                     android:background="@color/silver"
@@ -78,7 +78,7 @@
                     android:id="@+id/developer_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="App Developed By: Sarita Kumari"
+                    android:text="App Developed By: Vishnu Kumawat"
                     android:textSize="10dp"
                     android:textAlignment="center"
                     android:background="@color/silver"

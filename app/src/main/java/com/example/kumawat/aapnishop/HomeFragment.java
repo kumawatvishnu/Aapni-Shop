@@ -76,7 +76,7 @@ public class HomeFragment extends Fragment implements SearchView.OnQueryTextList
         View view = inflater.inflate(R.layout.fragment_home, null);
 
         mToolbar = view.findViewById(R.id.toolbar_home);
-        mToolbar.setTitle("Chaudhary Hardware");
+        mToolbar.setTitle("Kumawat Hardware");
         ((MainActivity)getActivity()).setSupportActionBar(mToolbar);
         //alertDialogHelper =new AlertDialogHelper(getActivity());
         mDatabase = getActivity().openOrCreateDatabase(MainActivity.DATABASE_NAME, MODE_PRIVATE, null);
