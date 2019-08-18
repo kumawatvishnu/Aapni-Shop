@@ -15,5 +15,10 @@
         android:icon="@drawable/ic_plus_one_black_24dp"
         android:title="@string/new_item"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/clear_database"
+        android:enabled="true"
+        android:title="@string/clear_database"
+        app:showAsAction="collapseActionView"/>
 
 </menu>

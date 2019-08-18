@@ -3,63 +3,87 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_my_account"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            app:layout_constraintTop_toTopOf="parent"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-            <ImageView
-                android:id="@+id/profile_photo"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:src="@drawable/ic_account_circle_black_24dp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_my_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintTop_toTopOf="parent"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/chaudharyhardware" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chaudhary Hardware"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:background="@color/silver"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:id="@+id/owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R. Chaudhary"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:background="@color/silver"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:id="@+id/shop_ph_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mob. 9468684517"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:background="@color/silver"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:id="@+id/shop_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shop_address"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:background="@color/silver"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:id="@+id/developer_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App Developed By: Sarita Kumari"
+                    android:textSize="10dp"
+                    android:textAlignment="center"
+                    android:background="@color/silver"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
-            <TextView
-                android:id="@+id/shop_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Kumawat Hardware"
-                android:textSize="30dp"
-                android:textAlignment="center"
-                android:background="@color/silver"
-                android:layout_marginBottom="10dp"
-                />
-            <TextView
-                android:id="@+id/shop_ph_number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mob. 9461537057"
-                android:textSize="25dp"
-                android:textAlignment="center"
-                android:background="@color/silver"
-                android:layout_marginBottom="10dp"
-                />
-            <TextView
-                android:id="@+id/shop_address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/shop_address"
-                android:textSize="15dp"
-                android:textAlignment="center"
-                android:background="@color/silver"
-                android:layout_marginBottom="10dp"/>
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

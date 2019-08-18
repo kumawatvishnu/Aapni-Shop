@@ -13,4 +13,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="summary">Summary</string>
+    <string name="exit_msg">\" Press Back again to Exit \"</string>
+    <string name="developer_name">Vishnu Kumawat</string>
+    <string name="clear_database">Delete All Item</string>
+    <string name="delete_db_text">Do you want to Delete all items...</string>
+    <string name="clear_transaction">Delete All</string>
+    <string name="menu_item_delete">Delete</string>
 </resources>

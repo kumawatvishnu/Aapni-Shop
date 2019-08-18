@@ -1,22 +1,18 @@
 package com.example.kumawat.aapnishop;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 //import com.github.wrdlbrnft.sortedlistadapter.SortedListAdapter;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by Kumawat on 4/22/2018.
@@ -24,7 +20,8 @@ import java.util.Optional;
 
 public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder>{
     private Context ctx;
-    private List<Item> itemList;
+    public List<Item> itemList=new ArrayList<>();
+    public List<Item> selected_itemList=new ArrayList<>();
 
     public List<Item> getItemList() {
         return itemList;
@@ -34,47 +31,13 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         this.itemList = itemList;
     }
 
-    /*public interface Listener {
-            void onExampleModelClicked(Item item);
-        }
-        private final Listener mListener;
-
-        public ItemAdapter(Context context, Comparator<Item> comparator, Listener listener) {
-            super(context, Item.class, comparator);
-            mListener = listener;
-        }
-
-        @NonNull
-        @Override
-        protected ViewHolder<? extends Item> onCreateViewHolder(@NonNull LayoutInflater inflater, @NonNull ViewGroup parent, int viewType) {
-            final ItemWordBinding binding = ItemWordBinding.inflate(inflater, parent, false);
-            return new WordViewHolder(binding, mListener);
-        }
-
-        public class ItemViewHolder extends SortedListAdapter.ViewHolder<Item> {
-
-            private final ItemWordBinding mBinding;
-
-            public ItemViewHolder(ItemWordBinding binding, ItemAdapter.Listener listener) {
-                super(binding.getRoot());
-                binding.setListener(listener);
-
-                mBinding = binding;
-            }
-
-            @Override
-            protected void performBind(@NonNull Item item) {
-
-            }
-        }
-        */
     public ItemAdapter(){
 
     }
-    public ItemAdapter(Context ctx, List<Item> itemList) {
+    public ItemAdapter(Context ctx, List<Item> itemList, List<Item> selected_itemList) {
         this.ctx = ctx;
         this.itemList = itemList;
-        //mFilter = new CustomFilter(ItemAdapter.this);
+        this.selected_itemList = selected_itemList;
     }
 
     @Override
@@ -109,8 +72,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemViewHolder
         notifyDataSetChanged();
     }
 
-    public void addNewItemEntry(Item item) {
+    public List<Item> addNewItemEntry(Item item) {
         itemList.add(item);
+        notifyDataSetChanged();
+        return itemList;
+    }
+
+    public void setAllClearItem() {
+        itemList.clear();
         notifyDataSetChanged();
     }
 

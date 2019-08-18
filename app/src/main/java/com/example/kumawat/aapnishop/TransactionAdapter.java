@@ -44,6 +44,11 @@ class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.Transac
         return transactionList.size();
     }
 
+    public void setAllClearItem() {
+        transactionList.clear();
+        notifyDataSetChanged();
+    }
+
     public class TransactionViewHolder extends RecyclerView.ViewHolder {
         TextView tr_amount, tr_details, tr_type;
 
